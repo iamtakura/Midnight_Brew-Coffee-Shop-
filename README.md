@@ -59,6 +59,17 @@ npm start
 npm run dev
 ```
 
+## 🌐 Deployment
+
+### Frontend (GitHub Pages)
+The project is optimized for GitHub Pages. 
+1. Go to your repository settings on GitHub.
+2. Navigate to **Pages**.
+3. Under **Build and deployment > Source**, select **GitHub Actions**.
+4. The site will automatically build and deploy every time you push to the `main` branch.
+
+**Note**: Since GitHub Pages only hosts static files, your Stripe backend must be hosted separately (e.g., on Render, Vercel, or Railway) and the `VITE_API_URL` updated to point to that live URL.
+
 ## 📂 Project Structure
 
 - `src/`: React frontend source code.
