@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'IBM Plex Mono', monospace;
+}
+body {
+  font-family: var(--font-body);
+  background-color: #ffffff;
+  color: #000000;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-left: 1px solid #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #000000;
+}
+/* Utility for "ink stamp" look */
+.ink-stamp {
+  border: 2px solid #000000;
+  padding: 0.25rem 0.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  display: inline-block;
+  transform: rotate(-2deg);
+}
+/* Newspaper grid lines */
+.grid-lines {
+  background-image: linear-gradient(to right, #000000 1px, transparent 1px),
+                    linear-gradient(to bottom, #000000 1px, transparent 1px);
+  background-size: 100% 1px, 1px 100%; /* Horizontal lines only by default, adjust as needed */
+}
